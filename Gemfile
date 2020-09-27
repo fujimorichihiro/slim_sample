@@ -25,7 +25,6 @@ gem 'jbuilder', '~> 2.5'
 
 # sliln-rails 導入
 gem 'slim-rails'
-
 gem 'html2slim'
 
 gem 'bootsnap', '>= 1.1.0', require: false
