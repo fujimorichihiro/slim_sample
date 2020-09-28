@@ -28,6 +28,9 @@ gem 'slim-rails'
 gem 'html2slim'
 # devise
 gem 'devise'
+# Bootatrap
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
