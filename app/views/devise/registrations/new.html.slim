@@ -1,6 +1,6 @@
 div.row
   div.col-3
-  div.col-6.border.border-dark.p-2
+  div.col-6.border.border-light.p-4.bg-light
     h2
       | Sign up
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
@@ -8,7 +8,7 @@ div.row
       .field.mb-2
         = f.label :email
         br
-        = f.email_field :email, autofocus: true, autocomplete: "email"
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
       .field.mb-2
         = f.label :password
         - if @minimum_password_length
@@ -17,12 +17,12 @@ div.row
             = @minimum_password_length
             |  characters minimum)
         br
-        = f.password_field :password, autocomplete: "new-password"
+        = f.password_field :password, autocomplete: "new-password", class: "form-control"
       .field.mb-2
         = f.label :password_confirmation
         br
-        = f.password_field :password_confirmation, autocomplete: "new-password"
+        = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control"
       .actions.mb-2
-        = f.submit "Sign up"
+        = f.submit "Sign up", class: "btn btn-info"
     = render "devise/shared/links"
   div.col-3
